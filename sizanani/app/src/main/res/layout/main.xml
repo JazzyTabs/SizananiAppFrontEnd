@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layer_card_background">
+
+//Header Section
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_height="120dp"
+        android:layout_width="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:src="@drawable/plank"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="#64000000">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="SIZANANI"
+                android:id="@+id/textViw3"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="50dp"
+                android:textColor="#76ffffff"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="YOUR NEED IS ONLY A CLICK AWAY"
+                android:id="@+id/textView"
+                android:layout_below="@+id/textViw3"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+//Form Section
+    <RelativeLayout
+        android:id="@+id/register_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:layout_margin="0dp"
+        android:layout_marginTop="5dp"
+        android:background="#F5F5F5"
+        android:visibility="visible">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+                //Login Section
+                <RelativeLayout
+                    android:id="@+id/LOG_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape1"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:padding="10dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="LOGIN"
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:fontFamily="vadana"
+                        android:textStyle="bold"
+                        android:id="@+id/loginText" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text=""
+                        android:layout_marginTop="5dp"
+                        android:textSize="11dp"
+                        android:textAlignment="center"
+                        android:fontFamily="vadana"
+                        android:visibility="gone"
+                        android:textColor="@color/absa_red"
+                        android:layout_below="@+id/loginText"
+                        android:textStyle="bold"
+                        android:id="@+id/LOG_error" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/LOG_email"
+                        android:layout_below="@+id/LOG_error"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:hint="email" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:id="@+id/LOG_password"
+                        android:layout_marginTop="10dp"
+                        android:hint="password"
+                        android:layout_below="@+id/LOG_email"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LOGIN"
+                        style="@style/ButtonBlue"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/LOG_btnLogin"
+                        android:layout_below="@+id/LOG_password"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="REGISTER"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/LOG_btnRegister"
+                        style="@style/ButtonRed"
+                        android:layout_below="@+id/LOG_btnLogin"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="forgot password"
+                        android:id="@+id/textView2"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"
+                        android:fontFamily="vadana"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/LOG_btnRegister"
+                        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+                //Register Section
+                <RelativeLayout
+                    android:id="@+id/REG_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape1"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="REGISTER"
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:fontFamily="vadana"
+                        android:textStyle="bold"
+                        android:id="@+id/registerText" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:ems="10"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/REG_name"
+                        android:layout_below="@+id/registerText"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:hint="name" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:ems="10"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/REG_surname"
+                        android:layout_below="@+id/REG_name"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:hint="surname" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/REG_email"
+                        android:layout_below="@+id/REG_surname"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:hint="email" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:id="@+id/REG_password"
+                        android:layout_marginTop="10dp"
+                        android:hint="password"
+                        android:layout_below="@+id/REG_email"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:id="@+id/REG_passwordTwo"
+                        android:layout_marginTop="10dp"
+                        android:hint="confirm password"
+                        android:layout_below="@+id/REG_password"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="REGISTER"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/REG_btnRegister"
+                        style="@style/ButtonRed"
+                        android:layout_below="@+id/REG_passwordTwo"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LOGIN"
+                        style="@style/ButtonBlue"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/REG_btnLogin"
+                        android:layout_below="@+id/REG_btnRegister"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+                </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>

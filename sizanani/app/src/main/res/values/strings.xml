@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">sizanani</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="registercompany">REGISTER NEW ACCOUNT</string>
+    <string name="existing_acc">SIGN IN EXISTING ACCOUNT</string>
+    <string name="title_activity_viewpager">Viewpager</string>
+    <string name="sign">SIGN IN</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="REGISTER">REGISTER</string>
+    <string name="title_activity_news">News</string>
+    <string name="title_activity_detailed_news">DetailedNewsActivity</string>
+    <string name="select_email">Please select email address</string>
+    <string name="select_school">Please select school</string>
+    <string name="select_grade">Please select grade</string>
+    <string name="crash_toast">gf</string>
+
+</resources>
